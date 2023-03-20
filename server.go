@@ -17,7 +17,7 @@ func main() {
 		c.Bind(user)
 		contentType := c.Request().Header.Get("Content-type")
 		if contentType == "application/json" {
-			fmt.Println("Request dari json")
+			fmt.Println("Request Dari Json")
 		}
 		response := new(Response)
 		if user.CreateUser() != nil { // method create user
